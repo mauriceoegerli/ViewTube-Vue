@@ -54,7 +54,7 @@
     "ioredis": "5.4.1",
     "joi": "17.13.3",
     "mini-svg-data-uri": "1.4.4",
-    "mongoose": "8.7.0",
+    "mongoose": "8.9.5",
     "nest-winston": "1.10.0",
     "reflect-metadata": "0.2.2",
     "rxjs": "7.8.1",
