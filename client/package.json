@@ -13,7 +13,7 @@
     "build:metadata": "node ./buildMetadata.mjs"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "1.2.0",
+    "@iconify-json/mdi": "1.2.3",
     "@nuxt/devtools": "1.5.2",
     "@nuxt/eslint": "0.5.7",
     "@pinia-plugin-persistedstate/nuxt": "1.2.1",
