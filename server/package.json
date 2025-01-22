@@ -60,7 +60,7 @@
     "rxjs": "7.8.1",
     "sharp": "0.33.5",
     "svg-captcha": "1.4.0",
-    "undici": "6.19.8",
+    "undici": "6.21.1",
     "web-push": "3.6.7",
     "winston": "3.15.0",
     "winston-daily-rotate-file": "5.0.0",
