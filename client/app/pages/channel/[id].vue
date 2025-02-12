@@ -94,12 +94,12 @@ const {
 
 <style lang="scss" scoped>
 .channel {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
 
   .channel-pages-container {
     user-select: auto;
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
 
     .channel-page {

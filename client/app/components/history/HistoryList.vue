@@ -101,7 +101,7 @@ const deleteEntry = async (videoId: string) => {
       width: 0;
       overflow: hidden;
 
-      @media screen and (max-width: $mobile-width) {
+      @media screen and (max-width: variables.$mobile-width) {
         padding-right: 160px;
         padding-bottom: 90px;
       }
@@ -121,7 +121,7 @@ const deleteEntry = async (videoId: string) => {
 
         .history-entry-progress-line {
           height: 3px;
-          background-image: $theme-color-primary-gradient;
+          background-image: variables.$theme-color-primary-gradient;
           display: block;
         }
       }
@@ -176,7 +176,7 @@ const deleteEntry = async (videoId: string) => {
       opacity: 0;
       pointer-events: none;
       user-select: none;
-      transition: opacity 200ms $intro-easing;
+      transition: opacity 200ms variables.$intro-easing;
     }
   }
 }

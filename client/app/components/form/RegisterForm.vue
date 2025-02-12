@@ -126,7 +126,7 @@ captchaStore.getCaptcha();
   width: 100%;
   max-width: 500px;
   background-color: var(--bgcolor-alt);
-  box-shadow: $max-shadow;
+  box-shadow: variables.$max-shadow;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ captchaStore.getCaptcha();
   position: relative;
   overflow-y: auto;
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     height: auto;
     box-shadow: none;
   }
@@ -148,7 +148,7 @@ captchaStore.getCaptcha();
     margin: 20px 0 0 0;
     font-size: 2rem;
     color: var(--theme-color);
-    font-family: $default-font;
+    font-family: variables.$default-font;
   }
 
   .message-display {
@@ -182,7 +182,7 @@ captchaStore.getCaptcha();
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 300ms $intro-easing;
+    transition: opacity 300ms variables.$intro-easing;
   }
 
   #register {
@@ -193,7 +193,7 @@ captchaStore.getCaptcha();
     max-width: 500px;
     padding: 10px;
     box-sizing: border-box;
-    transition: opacity 300ms $intro-easing;
+    transition: opacity 300ms variables.$intro-easing;
 
     .captcha-container {
       width: calc(100% - 40px);

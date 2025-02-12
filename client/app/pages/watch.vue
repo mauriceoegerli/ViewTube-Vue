@@ -161,23 +161,23 @@ const { createTextLinks } = useCreateTextLinks(setTimestamp);
 
 const loadComments = (evtVideoId: string = null) => {
   const videoId = evtVideoId || route.query.v;
-  getComments(videoId)
-    .then(response => {
-      if (response.comments && response.comments.length > 0) {
-        commentObject.value = response;
-        commentsLoading.value = false;
-        commentsContinuationLink.value = response.continuation || null;
-      } else {
-        commentsLoading.value = false;
-        commentsError.value = true;
-        commentObject.value = null;
-      }
-    })
-    .catch(_ => {
-      commentsLoading.value = false;
-      commentsError.value = true;
-      commentObject.value = null;
-    });
+  // getComments(videoId)
+  //   .then(response => {
+  //     if (response.comments && response.comments.length > 0) {
+  //       commentObject.value = response;
+  //       commentsLoading.value = false;
+  //       commentsContinuationLink.value = response.continuation || null;
+  //     } else {
+  //       commentsLoading.value = false;
+  //       commentsError.value = true;
+  //       commentObject.value = null;
+  //     }
+  //   })
+  //   .catch(_ => {
+  //     commentsLoading.value = false;
+  //     commentsError.value = true;
+  //     commentObject.value = null;
+  //   });
 };
 
 const loadMoreComments = () => {
@@ -455,9 +455,9 @@ const videoDescription = computed(() => {
 .share-fade-down-enter-active,
 .share-fade-down-leave-active {
   transition:
-    transform 200ms $intro-easing,
-    opacity 200ms $intro-easing,
-    height 200ms $intro-easing;
+    transform 200ms variables.$intro-easing,
+    opacity 200ms variables.$intro-easing,
+    height 200ms variables.$intro-easing;
 }
 .share-fade-down-enter-to,
 .share-fade-down-leave-from {
@@ -474,7 +474,7 @@ const videoDescription = computed(() => {
 
 .watch {
   width: 100%;
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
 
   .nojs-player {
     max-height: calc(100vh - 170px);
@@ -490,10 +490,10 @@ const videoDescription = computed(() => {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       flex-direction: column;
     }
 
@@ -501,7 +501,7 @@ const videoDescription = computed(() => {
       z-index: 400;
       padding: 10px;
 
-      @media screen and (min-width: $mobile-width) {
+      @media screen and (min-width: variables.$mobile-width) {
         min-width: 340px;
         max-width: 340px;
       }
@@ -514,26 +514,26 @@ const videoDescription = computed(() => {
       padding: 0 10px;
       box-sizing: border-box;
       opacity: 1;
-      transition: opacity 300ms $intro-easing;
+      transition: opacity 300ms variables.$intro-easing;
       z-index: 400;
       position: relative;
       width: 100%;
       overflow: hidden;
 
-      @media screen and (min-width: $mobile-width) {
+      @media screen and (min-width: variables.$mobile-width) {
         width: 100%;
         padding: 10px;
       }
 
       .video-infobox-title {
         color: var(--title-color);
-        font-family: $default-font;
+        font-family: variables.$default-font;
         font-size: 1.4rem;
         margin: 10px 0 10px 0;
       }
 
       .video-infobox-tags {
-        $tag-padding-left: calc((100% - #{$main-width}) / 2);
+        $tag-padding-left: calc((100% - #{variables.$main-width}) / 2);
         margin: 5px auto 0 auto;
         width: 100%;
         height: 40px;
@@ -571,7 +571,7 @@ const videoDescription = computed(() => {
 
         .infobox-views {
           color: var(--subtitle-color);
-          font-family: $default-font;
+          font-family: variables.$default-font;
           margin: 0 30px 0 0;
           font-size: 1.1rem;
         }
@@ -588,7 +588,7 @@ const videoDescription = computed(() => {
             .infobox-likes,
             .infobox-dislikes {
               color: var(--subtitle-color);
-              font-family: $default-font;
+              font-family: variables.$default-font;
               display: flex;
               flex-direction: row;
 
@@ -626,7 +626,7 @@ const videoDescription = computed(() => {
 
             .like-ratio-bar {
               position: absolute;
-              background-image: $theme-color-primary-gradient;
+              background-image: variables.$theme-color-primary-gradient;
               height: 100%;
             }
           }
@@ -640,7 +640,7 @@ const videoDescription = computed(() => {
         width: 100%;
         gap: 10px;
 
-        @media screen and (max-width: $watch-break-width) {
+        @media screen and (max-width: variables.$watch-break-width) {
           flex-direction: column;
           align-items: flex-start;
         }
@@ -673,7 +673,7 @@ const videoDescription = computed(() => {
             .infobox-channel-name {
               text-decoration: none;
               color: var(--title-color);
-              font-family: $default-font;
+              font-family: variables.$default-font;
               font-size: 1.2rem;
               width: 100%;
               display: flex;
@@ -696,7 +696,7 @@ const videoDescription = computed(() => {
 
             .infobox-channel-subcount {
               color: var(--subtitle-color);
-              font-family: $default-font;
+              font-family: variables.$default-font;
             }
           }
         }
@@ -735,7 +735,7 @@ const videoDescription = computed(() => {
       .video-infobox-description {
         margin: 10px auto 0 auto;
         color: var(--title-color);
-        font-family: $default-font;
+        font-family: variables.$default-font;
         line-height: 1.2rem;
         overflow: hidden;
         white-space: pre-wrap;

@@ -38,9 +38,11 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler',
           additionalData: `
            @use "sass:math";
-           @import "~/assets/styles/global/variables.scss";
+           @use "~/assets/styles/global/variables.scss" as variables;
+           @use "~/assets/styles/global/mixins.scss" as mixins;
           `
         }
       }
@@ -49,7 +51,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/eslint'
@@ -62,7 +64,7 @@ export default defineNuxtConfig({
     safelist: iconSafelist
   },
 
-  piniaPersistedstate: {
+  piniaPluginPersistedstate: {
     cookieOptions: {
       sameSite: 'strict'
     }

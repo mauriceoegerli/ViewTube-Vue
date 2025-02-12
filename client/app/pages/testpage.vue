@@ -19,7 +19,7 @@ const currentPage = ref(0);
 
 <style lang="scss" scoped>
 .testpage {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
   display: grid;
   grid-template:
     'page-count page-count-input' 30px

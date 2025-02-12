@@ -174,7 +174,7 @@ const copyCommitHash = () => {
 
     .full-commit {
       opacity: 0;
-      transition: opacity 300ms $intro-easing;
+      transition: opacity 300ms variables.$intro-easing;
     }
   }
 
@@ -209,7 +209,7 @@ const copyCommitHash = () => {
   .logo-about-img {
     width: 100%;
     transform-origin: top left;
-    animation: float-around 10s $dynamic-easing infinite;
+    animation: float-around 10s variables.$dynamic-easing infinite;
 
     @keyframes float-around {
       0% {

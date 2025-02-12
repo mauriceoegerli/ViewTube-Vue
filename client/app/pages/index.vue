@@ -47,17 +47,17 @@ const { data: homeFeedData, error: homeFeedError, pending: homeFeedLoading } = u
   }
 }
 .home {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
   display: flex;
   flex-direction: column;
 
   &.loading,
   &.error {
-    height: calc(100vh - $header-height);
+    height: calc(100vh - variables.$header-height);
   }
 
   .section-title {
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     .title {
       margin: 0 0 0 10px !important;
@@ -65,13 +65,13 @@ const { data: homeFeedData, error: homeFeedError, pending: homeFeedLoading } = u
   }
   .home-videos-container {
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
     z-index: 10;
     background-color: var(--bgcolor-main);
-    @include viewtube-grid;
+    @include mixins.viewtube-grid;
   }
 
   .home-show-more {
@@ -86,10 +86,10 @@ const { data: homeFeedData, error: homeFeedError, pending: homeFeedLoading } = u
     justify-content: center;
 
     width: calc(100% - 50px);
-    max-width: $search-box-width;
+    max-width: variables.$search-box-width;
 
     &.centered {
-      top: calc(50% - $header-height);
+      top: calc(50% - variables.$header-height);
     }
 
     .logo-link {

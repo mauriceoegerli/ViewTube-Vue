@@ -121,7 +121,7 @@ export default defineComponent({
     margin: 20px 0 0 0;
     font-size: 2rem;
     color: var(--theme-color);
-    font-family: $default-font;
+    font-family: variables.$default-font;
   }
 
   .message-display {
@@ -151,7 +151,7 @@ export default defineComponent({
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 300ms $intro-easing;
+    transition: opacity 300ms variables.$intro-easing;
   }
 
   #form {
@@ -161,7 +161,7 @@ export default defineComponent({
     max-width: 700px;
     padding: 10px;
     box-sizing: border-box;
-    transition: opacity 300ms $intro-easing;
+    transition: opacity 300ms variables.$intro-easing;
   }
 
   .close-icon {

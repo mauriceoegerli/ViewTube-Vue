@@ -65,7 +65,7 @@ const fallbackUrl = computed(() => {
     .show-btn {
       margin: 0 20px 10px 0;
       clip-path: circle(15px at 50% 120%);
-      transition: clip-path 300ms $intro-easing;
+      transition: clip-path 300ms variables.$intro-easing;
       filter: drop-shadow(0 0 1px #000);
 
       &:focus {

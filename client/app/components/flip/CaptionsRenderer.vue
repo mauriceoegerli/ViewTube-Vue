@@ -33,7 +33,7 @@ const currentCaption = computed(() => {
 .flip-captions-renderer {
   position: absolute;
   bottom: 20px;
-  transition: transform 200ms $intro-easing;
+  transition: transform 200ms variables.$intro-easing;
   display: flex;
   flex-direction: column;
   width: 100%;

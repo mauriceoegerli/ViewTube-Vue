@@ -130,8 +130,8 @@ const displaySecondDots = computed((): boolean => {
         overflow: hidden;
         text-align: center;
         transition:
-          width 300ms $intro-easing,
-          margin 300ms $intro-easing;
+          width 300ms variables.$intro-easing,
+          margin 300ms variables.$intro-easing;
 
         &.display {
           width: 12px;

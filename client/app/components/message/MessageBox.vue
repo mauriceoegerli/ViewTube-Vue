@@ -98,8 +98,8 @@ if (props.message.dismissDelay > 0) {
   box-sizing: border-box;
   position: relative;
   border-radius: 8px;
-  box-shadow: $max-shadow;
-  animation: blob-in-notif 300ms $intro-easing;
+  box-shadow: variables.$max-shadow;
+  animation: blob-in-notif 300ms variables.$intro-easing;
   overflow: hidden;
 
   &.is-animating {
@@ -115,7 +115,7 @@ if (props.message.dismissDelay > 0) {
       margin 300ms 300ms,
       padding 300ms 300ms,
       opacity 300ms !important;
-    transition-timing-function: $dynamic-easing;
+    transition-timing-function: variables.$dynamic-easing;
     transform: translateX(140%);
     margin: 0;
     padding: 0;
@@ -129,19 +129,19 @@ if (props.message.dismissDelay > 0) {
       margin 300ms 300ms,
       padding 300ms 300ms,
       opacity 300ms !important;
-    transition-timing-function: $dynamic-easing;
+    transition-timing-function: variables.$dynamic-easing;
     transform: translateX(-140%);
     margin: 0;
     padding: 0;
     font-size: 0;
   }
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     width: 100%;
     margin: 0 0 0 10px;
-    box-shadow: $low-shadow;
+    box-shadow: variables.$low-shadow;
     padding: 10px 64px 10px 10px;
-    animation: blob-in-bottom-notif 300ms $intro-easing;
+    animation: blob-in-bottom-notif 300ms variables.$intro-easing;
 
     .close {
       right: 24px !important;
@@ -198,7 +198,7 @@ if (props.message.dismissDelay > 0) {
     white-space: pre-wrap;
     width: 100%;
     color: var(--text-color);
-    font-family: $default-font;
+    font-family: variables.$default-font;
     margin: 5px 0 0 0;
   }
 

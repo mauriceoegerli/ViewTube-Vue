@@ -27,7 +27,7 @@
     max-width: 720px;
     max-height: 80%;
     background-color: var(--bgcolor-alt);
-    box-shadow: $medium-shadow;
+    box-shadow: variables.$medium-shadow;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -65,11 +65,11 @@
       margin: 0 auto;
       font-size: 2rem;
       color: var(--theme-color);
-      font-family: $default-font;
+      font-family: variables.$default-font;
       background-color: var(--bgcolor-alt);
       z-index: 2;
 
-      @media screen and (min-width: $mobile-width) {
+      @media screen and (min-width: variables.$mobile-width) {
         padding: 20px 0 0 0;
       }
     }
@@ -91,7 +91,7 @@
       margin: 0 0 0 36px;
     }
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       max-width: 100%;
       max-height: unset;
       padding: 20px;

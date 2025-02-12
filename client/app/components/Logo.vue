@@ -20,7 +20,7 @@
   z-index: +1;
 
   .logo {
-    font-family: $header-font;
+    font-family: variables.$header-font;
     font-size: 1.5rem;
     color: var(--title-color);
     width: auto;
@@ -44,10 +44,10 @@
 
   .logo-small {
     margin: auto;
-    height: calc(#{$header-height} - 20px);
+    height: calc(#{variables.$header-height} - 20px);
     transform: scale(0.8) translateY(-2px);
     transition:
-      clip-path 300ms $intro-easing,
+      clip-path 300ms variables.$intro-easing,
       transform 300ms linear;
   }
 }

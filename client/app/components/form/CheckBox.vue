@@ -51,7 +51,7 @@ const onChange = (e: any) => {
     all: unset;
     width: 24px;
     height: 24px;
-    background-image: $theme-color-primary-gradient;
+    background-image: variables.$theme-color-primary-gradient;
     border-radius: 5px;
     background-repeat: no-repeat;
 
@@ -92,8 +92,8 @@ const onChange = (e: any) => {
     background-color: var(--bgcolor-alt);
     display: block;
     transition:
-      background-color 300ms $intro-easing,
-      clip-path 300ms $intro-easing;
+      background-color 300ms variables.$intro-easing,
+      clip-path 300ms variables.$intro-easing;
 
     .checkbox-background {
       width: 20px;
@@ -103,7 +103,7 @@ const onChange = (e: any) => {
       display: block;
       margin: 0;
       position: relative;
-      transition: background-color 300ms $intro-easing;
+      transition: background-color 300ms variables.$intro-easing;
     }
   }
 

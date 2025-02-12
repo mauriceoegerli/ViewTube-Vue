@@ -36,7 +36,7 @@ withDefaults(
   z-index: 1;
 
   .title {
-    max-width: $main-width;
+    max-width: variables.$main-width;
     font-size: 1.7rem;
     box-sizing: border-box;
     font-weight: bold;
@@ -53,7 +53,7 @@ withDefaults(
     .vt-icon {
       height: 1.2em;
       width: 1.2em;
-      transition: transform 300ms $intro-easing;
+      transition: transform 300ms variables.$intro-easing;
     }
   }
   .line {

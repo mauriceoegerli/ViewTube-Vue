@@ -35,7 +35,7 @@ defineProps<{
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       flex-direction: column-reverse;
     }
   }
@@ -48,7 +48,7 @@ defineProps<{
     bottom: -1px;
     left: 0;
     z-index: -1;
-    background-image: $video-player-gradient;
+    background-image: variables.$video-player-gradient;
     transform: rotate(180deg);
   }
 }

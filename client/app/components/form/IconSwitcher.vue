@@ -44,7 +44,7 @@ const selectIcon = (newIcon: string) => {
       display: flex;
       border-radius: 8px;
       cursor: pointer;
-      transition: border 200ms $intro-easing;
+      transition: border 200ms variables.$intro-easing;
       box-sizing: border-box;
 
       .switcher-icon {

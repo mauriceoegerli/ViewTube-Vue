@@ -312,8 +312,8 @@ const logout = async () => {
 .popup-enter-active,
 .popup-leave-active {
   transition:
-    opacity 300ms $intro-easing,
-    transform 300ms $intro-easing;
+    opacity 300ms variables.$intro-easing,
+    transform 300ms variables.$intro-easing;
 }
 .popup-enter-to,
 .popup-leave-from {
@@ -345,8 +345,8 @@ const logout = async () => {
     color: var(--error-color-red);
     border-color: var(--error-color-red);
     transition:
-      color 300ms $intro-easing,
-      background-color 300ms $intro-easing;
+      color 300ms variables.$intro-easing,
+      background-color 300ms variables.$intro-easing;
 
     &:hover {
       color: unset;
@@ -359,9 +359,9 @@ const logout = async () => {
 .profile {
   width: 100%;
   max-width: 800px;
-  padding-top: $header-height;
+  padding-top: variables.$header-height;
   margin: 0 auto;
-  max-height: calc(100% - #{$header-height});
+  max-height: calc(100% - #{variables.$header-height});
   box-sizing: border-box;
 
   .profile-top {
@@ -380,7 +380,7 @@ const logout = async () => {
       filter: blur(50px);
       opacity: 0.7;
 
-      @media screen and (max-width: $mobile-width) {
+      @media screen and (max-width: variables.$mobile-width) {
         top: 0;
       }
     }
@@ -394,10 +394,10 @@ const logout = async () => {
       position: relative;
       box-sizing: border-box;
       width: calc(100% - 40px);
-      box-shadow: $low-shadow;
+      box-shadow: variables.$low-shadow;
       position: relative;
 
-      @media screen and (max-width: $mobile-width) {
+      @media screen and (max-width: variables.$mobile-width) {
         margin: 130px 0 0 0;
         padding: 90px 15px 10px 15px;
         height: 230px;
@@ -438,7 +438,7 @@ const logout = async () => {
             filter: drop-shadow(4px 5px 12px var(--theme-color-translucent));
           }
 
-          @media screen and (max-width: $mobile-width) {
+          @media screen and (max-width: variables.$mobile-width) {
             left: 50%;
             top: -30%;
             transform: translateX(-50%);
@@ -473,7 +473,7 @@ const logout = async () => {
             border-radius: 5px;
             opacity: 0;
             pointer-events: none;
-            transition: opacity 200ms $intro-easing;
+            transition: opacity 200ms variables.$intro-easing;
             cursor: pointer;
 
             .vt-icon {
@@ -508,7 +508,7 @@ const logout = async () => {
         .user-name {
           font-size: 1.8rem;
 
-          @media screen and (max-width: $mobile-width) {
+          @media screen and (max-width: variables.$mobile-width) {
             width: 100%;
             text-align: center;
           }
@@ -519,7 +519,7 @@ const logout = async () => {
         color: var(--subtitle-color);
         font-size: 0.9rem;
         margin: 0 0 5px 0;
-        transition: filter 500ms $intro-easing;
+        transition: filter 500ms variables.$intro-easing;
 
         &.blurred {
           filter: blur(5px);
@@ -569,14 +569,14 @@ const logout = async () => {
           padding: 2px;
           border-radius: 3px;
           cursor: pointer;
-          transition: border 300ms $intro-easing;
+          transition: border 300ms variables.$intro-easing;
 
           &:hover {
             border: 2px solid var(--theme-color);
           }
 
           .chevron-icon {
-            transition: transform 300ms $intro-easing;
+            transition: transform 300ms variables.$intro-easing;
           }
         }
         .actions-details {
@@ -592,19 +592,19 @@ const logout = async () => {
             user-select: none;
             pointer-events: none;
             transition:
-              transform 300ms $intro-easing,
-              opacity 300ms $intro-easing,
-              border 300ms 0ms $intro-easing;
+              transform 300ms variables.$intro-easing,
+              opacity 300ms variables.$intro-easing,
+              border 300ms 0ms variables.$intro-easing;
           }
 
           @for $i from 0 through 3 {
             .action:nth-of-type(#{$i + 1}) {
-              transition-delay: 100ms * $i !important;
+              transition-delay: 100ms * variables.$i !important;
             }
           }
         }
 
-        @media screen and (max-width: $mobile-width) {
+        @media screen and (max-width: variables.$mobile-width) {
           top: unset;
           bottom: 20px;
         }

@@ -79,7 +79,7 @@ const videoLengthText = computed(() => {
   color: #fefefe;
   position: relative;
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     height: 50px;
     padding: 10px 10px 20px 10px;
   }
@@ -96,7 +96,7 @@ const videoLengthText = computed(() => {
       right: 0;
     }
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       top: unset;
       bottom: 0;
     }
@@ -115,7 +115,7 @@ const videoLengthText = computed(() => {
   }
 
   .volume-control {
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       visibility: hidden !important;
     }
   }

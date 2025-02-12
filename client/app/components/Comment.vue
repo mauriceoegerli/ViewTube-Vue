@@ -160,13 +160,13 @@ const commentContent = computed(() => {
   margin: 0 0 20px 0;
   display: grid;
   grid-template-columns: 55px minmax(0, 1fr);
-  font-family: $default-font;
+  font-family: variables.$default-font;
   background-color: var(--bgcolor-alt);
   padding: 10px;
   box-sizing: border-box;
   border-radius: 4px;
   border: 2px solid var(--bgcolor-alt);
-  transition: border 300ms $intro-easing;
+  transition: border 300ms variables.$intro-easing;
   overflow: hidden;
 
   &.open {

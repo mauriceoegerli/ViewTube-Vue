@@ -208,7 +208,7 @@ const getHoverPositionByWidth = (elWidth: number) => {
       border-radius: 50%;
       background-color: var(--theme-color);
       transform: scale(0);
-      transition: transform 300ms $intro-easing;
+      transition: transform 300ms variables.$intro-easing;
     }
   }
 

@@ -61,7 +61,7 @@ export default defineComponent({
 
   #qrcode {
     margin: auto;
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       width: 240px !important;
       height: 240px !important;
     }

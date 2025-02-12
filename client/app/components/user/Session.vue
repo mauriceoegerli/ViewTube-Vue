@@ -142,7 +142,7 @@ const editSession = (newName: string, newDeviceType: string) => {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  box-shadow: $low-shadow;
+  box-shadow: variables.$low-shadow;
   position: relative;
   overflow: hidden;
   padding: 0 6px 0 0;
@@ -160,7 +160,7 @@ const editSession = (newName: string, newDeviceType: string) => {
     align-items: center;
     box-sizing: border-box;
     padding: 0 6px 0 15px;
-    transition: clip-path 300ms $intro-easing;
+    transition: clip-path 300ms variables.$intro-easing;
     clip-path: circle(0% at calc(100% - 28px) 50%);
 
     &.visible {
@@ -197,7 +197,7 @@ const editSession = (newName: string, newDeviceType: string) => {
 
   &.current {
     border: solid 2px var(--theme-color);
-    box-shadow: $medium-shadow;
+    box-shadow: variables.$medium-shadow;
   }
 
   .session-remove,

@@ -57,7 +57,7 @@ const { proxyUrl } = useImgProxy();
 .related-channels {
   width: 100%;
   height: 280px;
-  max-width: $main-width;
+  max-width: variables.$main-width;
   margin: 5px auto 0 auto;
   overflow: scroll;
   scrollbar-width: thin;
@@ -94,8 +94,8 @@ const { proxyUrl } = useImgProxy();
       box-shadow: 0 0 0 2px var(--theme-color-translucent);
       border-radius: 3px;
       transition:
-        background-color 300ms $intro-easing,
-        box-shadow 300ms $intro-easing;
+        background-color 300ms variables.$intro-easing,
+        box-shadow 300ms variables.$intro-easing;
 
       &:hover {
         background-color: var(--bgcolor-alt);
@@ -124,7 +124,7 @@ const { proxyUrl } = useImgProxy();
           justify-content: space-between;
           width: 100%;
           color: var(--subtitle-color);
-          font-family: $default-font;
+          font-family: variables.$default-font;
 
           .related-channel-title-text {
             overflow: hidden;

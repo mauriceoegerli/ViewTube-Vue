@@ -15,8 +15,8 @@
 <style lang="scss" scoped>
 .admin {
   width: 100%;
-  max-width: $main-width;
-  margin: $header-height auto 0 auto;
+  max-width: variables.$main-width;
+  margin: variables.$header-height auto 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
 }

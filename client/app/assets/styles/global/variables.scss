@@ -53,10 +53,3 @@ $player-max-height: calc(100vh - 169px);
 $search-box-width: 800px;
 
 $title-color-fake-gradient: linear-gradient(to right, var(--title-color), var(--title-color));
-
-@mixin viewtube-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  // grid-auto-rows: minmax(300px, auto);
-  gap: 1em 2em;
-}

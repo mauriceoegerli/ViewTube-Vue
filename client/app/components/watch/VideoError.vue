@@ -21,7 +21,7 @@ const errorDetails = computed(() => {
 
 <style lang="scss" scoped>
 .video-error {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
   position: relative;
   height: 300px;
 }

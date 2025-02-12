@@ -98,7 +98,7 @@ const selectText = (event: MouseEvent) => {
         td {
           text-align: left;
 
-          @media screen and (max-width: $mobile-width) {
+          @media screen and (max-width: variables.$mobile-width) {
             &.created {
               display: none;
             }
@@ -133,7 +133,7 @@ const selectText = (event: MouseEvent) => {
 
         td {
           padding: 4px 0;
-          transition: background-color 100ms $intro-easing;
+          transition: background-color 100ms variables.$intro-easing;
 
           &:first-child {
             border-top-left-radius: 5px;

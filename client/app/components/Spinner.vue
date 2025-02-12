@@ -29,7 +29,7 @@ $rectangle-width: 8px;
     height: 100%;
     width: $rectangle-width;
     display: block;
-    animation: spinner 4000ms infinite $dynamic-easing;
+    animation: spinner 4000ms infinite variables.$dynamic-easing;
     margin: auto 0;
     border-radius: 25px;
   }

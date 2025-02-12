@@ -90,7 +90,7 @@ const channelNameToImgString = (): string => {
   position: relative;
 
   &.horizontal {
-    @media screen and (min-width: $mobile-width) {
+    @media screen and (min-width: variables.$mobile-width) {
       flex-direction: row;
       width: 100%;
 
@@ -111,7 +111,7 @@ const channelNameToImgString = (): string => {
       }
     }
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       width: 100%;
     }
   }
@@ -121,7 +121,7 @@ const channelNameToImgString = (): string => {
     height: 175px;
     overflow: hidden;
     position: relative;
-    box-shadow: $medium-shadow;
+    box-shadow: variables.$medium-shadow;
     margin: 0 auto;
     z-index: 11;
 
@@ -155,7 +155,7 @@ const channelNameToImgString = (): string => {
 
   .channel-entry-info {
     padding: 10px 0 10px 0;
-    font-family: $default-font;
+    font-family: variables.$default-font;
     overflow: hidden;
     display: flex;
     flex-direction: column;

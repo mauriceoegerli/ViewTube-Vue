@@ -144,14 +144,14 @@ const playlistDescription = computed(() => {
 
 <style lang="scss">
 .playlist {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
 
   .thumbnail-banner-container {
     width: 100%;
     padding-top: 25%;
     position: relative;
 
-    @media screen and (max-width: $main-width) {
+    @media screen and (max-width: variables.$main-width) {
       padding-top: 30%;
     }
 
@@ -163,7 +163,7 @@ const playlistDescription = computed(() => {
       padding-top: 45%;
     }
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       padding-top: 50%;
     }
 
@@ -192,7 +192,7 @@ const playlistDescription = computed(() => {
       background-size: 100%;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-position: 0 $header-height;
+      background-position: 0 variables.$header-height;
       filter: blur(15px);
     }
 
@@ -218,7 +218,7 @@ const playlistDescription = computed(() => {
         }
 
         .author-thumbnail {
-          box-shadow: $medium-shadow;
+          box-shadow: variables.$medium-shadow;
           display: block;
           width: 94px;
         }
@@ -226,13 +226,13 @@ const playlistDescription = computed(() => {
         .author-info {
           pointer-events: none;
           transition:
-            width 300ms $intro-easing,
-            opacity 300ms 200ms $intro-easing;
+            width 300ms variables.$intro-easing,
+            opacity 300ms 200ms variables.$intro-easing;
           overflow: hidden;
           margin: 10px 0 0 0;
           padding: 2px 5px;
           border-radius: 5px;
-          transition: background-color 200ms $intro-easing;
+          transition: background-color 200ms variables.$intro-easing;
         }
       }
 
@@ -276,11 +276,11 @@ const playlistDescription = computed(() => {
       overflow: hidden;
       white-space: pre-wrap;
       overflow-wrap: break-word;
-      font-family: $default-font;
+      font-family: variables.$default-font;
     }
 
     .playlist-videos-container {
-      @include viewtube-grid;
+      @include mixins.viewtube-grid;
     }
 
     .load-more-btn {

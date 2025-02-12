@@ -66,7 +66,7 @@ export default defineComponent({
     width: calc(100% - 20px);
     z-index: 10;
     transition-duration: 300ms;
-    transition-timing-function: $intro-easing;
+    transition-timing-function: variables.$intro-easing;
     transition-property: box-shadow;
   }
 
@@ -75,7 +75,7 @@ export default defineComponent({
     width: 300px;
     overflow: hidden;
     position: relative;
-    box-shadow: $max-shadow;
+    box-shadow: variables.$max-shadow;
     z-index: 11;
     margin: 0 10px 0 0;
 
@@ -91,22 +91,22 @@ export default defineComponent({
     }
     .movie-entry-count {
       text-decoration: none;
-      color: $video-thmb-overlay-textcolor;
+      color: variables.$video-thmb-overlay-textcolor;
       position: absolute;
       right: 0;
       bottom: 0;
       padding: 2px 4px;
       margin: 8px 4px;
-      background-color: $video-thmb-overlay-bgcolor;
+      background-color: variables.$video-thmb-overlay-bgcolor;
       box-sizing: border-box;
       border-radius: 2px;
-      font-family: $default-font;
+      font-family: variables.$default-font;
     }
   }
 
   .movie-entry-info {
     padding: 10px 0 10px 0;
-    font-family: $default-font;
+    font-family: variables.$default-font;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@ export default defineComponent({
     }
   }
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     width: calc(100% - 20px);
     margin: 10px;
 

@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
   .confirmation {
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: $max-shadow;
+    box-shadow: variables.$max-shadow;
     z-index: 9;
     position: fixed;
     top: 50%;

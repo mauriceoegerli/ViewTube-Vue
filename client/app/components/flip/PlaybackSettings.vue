@@ -104,7 +104,7 @@ const setVideoSpeed = (speed: number) => {
     width: 50px;
     padding: 2px 5px;
     border-radius: 5px;
-    transition: border 300ms $intro-easing;
+    transition: border 300ms variables.$intro-easing;
 
     &:focus {
       border: 2px solid var(--theme-color);

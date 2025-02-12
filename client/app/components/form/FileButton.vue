@@ -32,13 +32,13 @@ export default defineComponent({
   cursor: pointer;
   user-select: none;
   margin: 20px 20px;
-  background: $theme-color-primary-gradient;
+  background: variables.$theme-color-primary-gradient;
   padding: 8px 0;
   border-radius: 5px;
   box-sizing: border-box;
   color: var(--title-color);
-  box-shadow: $low-shadow;
-  transition: box-shadow 300ms $intro-easing;
+  box-shadow: variables.$low-shadow;
+  transition: box-shadow 300ms variables.$intro-easing;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,7 +47,7 @@ export default defineComponent({
   gap: 10px;
 
   &:hover {
-    box-shadow: $max-shadow;
+    box-shadow: variables.$max-shadow;
   }
 }
 

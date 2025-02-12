@@ -1,0 +1,6 @@
+@mixin viewtube-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  // grid-auto-rows: minmax(300px, auto);
+  gap: 1em 2em;
+}

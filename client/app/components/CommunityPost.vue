@@ -69,7 +69,7 @@ const communityPostContent = computed(() => {
     .text-pre {
       color: var(--title-color);
       font-size: 1rem;
-      font-family: $default-font;
+      font-family: variables.$default-font;
       white-space: pre-wrap;
       margin: 0;
     }

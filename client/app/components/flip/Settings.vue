@@ -51,7 +51,7 @@ defineProps<{
   pointer-events: all;
 
   .flip-settings {
-    margin: $header-height auto;
+    margin: variables.$header-height auto;
     background-color: var(--bgcolor-alt);
     border-radius: 5px;
     width: 100%;
@@ -59,7 +59,7 @@ defineProps<{
     height: auto;
     max-height: 100%;
     display: flex;
-    box-shadow: $medium-shadow;
+    box-shadow: variables.$medium-shadow;
     flex-direction: column;
     overflow: auto;
 
@@ -123,7 +123,7 @@ defineProps<{
       }
 
       &.mobile-only {
-        @media screen and (min-width: $mobile-width) {
+        @media screen and (min-width: variables.$mobile-width) {
           display: none;
         }
       }

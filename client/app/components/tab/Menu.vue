@@ -129,7 +129,7 @@ const resetPageLinkPull = () => {
 
     &.active-simple {
       background-color: var(--bgcolor-alt-light);
-      box-shadow: $low-shadow;
+      box-shadow: variables.$low-shadow;
     }
 
     &::after {
@@ -144,32 +144,32 @@ const resetPageLinkPull = () => {
     height: 35px;
     width: v-bind(selectedElementWidth);
     border-radius: 5px;
-    box-shadow: $low-shadow;
+    box-shadow: variables.$low-shadow;
     background-color: var(--bgcolor-alt-light);
     transition:
-      left 300ms $intro-easing,
-      width 300ms $intro-easing,
-      height 150ms $intro-easing,
-      top 150ms $intro-easing,
-      transform 300ms $intro-easing;
+      left 300ms variables.$intro-easing,
+      width 300ms variables.$intro-easing,
+      height 150ms variables.$intro-easing,
+      top 150ms variables.$intro-easing,
+      transform 300ms variables.$intro-easing;
 
     &.pull-left {
-      transform: translateX(v-bind('`-${pullLeft * 3}px`'));
+      transform: translateX(v-bind('`-variables.${pullLeft * 3}px`'));
       transition:
-        left 300ms $intro-easing,
-        width 300ms $intro-easing,
-        height 150ms $intro-easing,
-        top 150ms $intro-easing,
-        transform 600ms $intro-easing;
+        left 300ms variables.$intro-easing,
+        width 300ms variables.$intro-easing,
+        height 150ms variables.$intro-easing,
+        top 150ms variables.$intro-easing,
+        transform 600ms variables.$intro-easing;
     }
     &.pull-right {
-      transform: translateX(v-bind('`${pullRight * 3}px`'));
+      transform: translateX(v-bind('`variables.${pullRight * 3}px`'));
       transition:
-        left 300ms $intro-easing,
-        width 300ms $intro-easing,
-        height 150ms $intro-easing,
-        top 150ms $intro-easing,
-        transform 600ms $intro-easing;
+        left 300ms variables.$intro-easing,
+        width 300ms variables.$intro-easing,
+        height 150ms variables.$intro-easing,
+        top 150ms variables.$intro-easing,
+        transform 600ms variables.$intro-easing;
     }
   }
 }

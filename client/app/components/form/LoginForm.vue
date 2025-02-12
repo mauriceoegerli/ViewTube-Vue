@@ -100,7 +100,7 @@ export default defineComponent({
   width: 100%;
   max-width: 500px;
   background-color: var(--bgcolor-alt);
-  box-shadow: $medium-shadow;
+  box-shadow: variables.$medium-shadow;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ export default defineComponent({
   justify-content: flex-start;
   position: relative;
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     height: auto;
     box-shadow: none;
   }
@@ -121,7 +121,7 @@ export default defineComponent({
     margin: 20px 0 0 0;
     font-size: 2rem;
     color: var(--theme-color);
-    font-family: $default-font;
+    font-family: variables.$default-font;
   }
 
   .message-display {
@@ -151,7 +151,7 @@ export default defineComponent({
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 300ms $intro-easing;
+    transition: opacity 300ms variables.$intro-easing;
   }
 
   #login {
@@ -161,7 +161,7 @@ export default defineComponent({
     max-width: 500px;
     padding: 10px;
     box-sizing: border-box;
-    transition: opacity 300ms $intro-easing;
+    transition: opacity 300ms variables.$intro-easing;
   }
 }
 

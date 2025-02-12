@@ -122,7 +122,7 @@ const channelDescription = computed(() => {
 
   .channel-description {
     white-space: pre-wrap;
-    font-family: $default-font;
+    font-family: variables.$default-font;
     margin: 0;
     word-break: break-word;
   }

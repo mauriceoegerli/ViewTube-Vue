@@ -55,7 +55,7 @@ const createUserAdmin = async () => {
   display: flex;
   flex-direction: row;
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     flex-direction: column;
   }
 
@@ -70,7 +70,7 @@ const createUserAdmin = async () => {
     margin-right: 10px;
     width: calc(100% - 10px);
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       margin-right: 0;
       width: 100%;
     }

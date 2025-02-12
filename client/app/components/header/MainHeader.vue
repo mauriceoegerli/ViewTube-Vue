@@ -32,7 +32,7 @@ const { posAbsolute, topPositionPx } = useHeaderScroll();
 
 <style lang="scss">
 .header {
-  height: $header-height;
+  height: variables.$header-height;
   width: 100%;
   position: fixed;
   top: 0;
@@ -46,16 +46,16 @@ const { posAbsolute, topPositionPx } = useHeaderScroll();
   top: v-bind(topPositionPx);
 
   transition:
-    box-shadow 300ms $intro-easing,
-    background-color 300ms $intro-easing,
-    transform 300ms $dynamic-easing;
+    box-shadow 300ms variables.$intro-easing,
+    background-color 300ms variables.$intro-easing,
+    transform 300ms variables.$dynamic-easing;
 
   &::before {
     content: '';
     position: absolute;
     left: 0;
     top: -100%;
-    height: $header-height;
+    height: variables.$header-height;
     width: 100%;
     background-color: var(--header-bgcolor);
   }
@@ -64,7 +64,7 @@ const { posAbsolute, topPositionPx } = useHeaderScroll();
     position: absolute;
   }
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     .logo-link {
       width: 40px;
 

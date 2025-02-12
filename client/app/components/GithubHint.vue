@@ -35,7 +35,7 @@ const onDismiss = () => {
 
 <style lang="scss" scoped>
 .github-hint {
-  max-width: $main-width;
+  max-width: variables.$main-width;
   margin: 0 auto;
   width: 100%;
   display: grid;
@@ -59,7 +59,7 @@ const onDismiss = () => {
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid #30363d;
-    transition: border-color 200ms $intro-easing;
+    transition: border-color 200ms variables.$intro-easing;
     cursor: pointer;
 
     .hint-text {
@@ -109,7 +109,7 @@ const onDismiss = () => {
         opacity: 0.8;
       }
 
-      @media screen and (max-width: $mobile-width) {
+      @media screen and (max-width: variables.$mobile-width) {
         &-1 {
           left: 50px;
         }
@@ -153,7 +153,7 @@ const onDismiss = () => {
         transform: rotate(200deg);
       }
 
-      @media screen and (max-width: $mobile-width) {
+      @media screen and (max-width: variables.$mobile-width) {
         &-2 {
           right: 105px;
         }
@@ -171,7 +171,7 @@ const onDismiss = () => {
       right: 10px;
       bottom: 10px;
       width: calc(100% - 20px);
-      background: $theme-color-primary-gradient;
+      background: variables.$theme-color-primary-gradient;
       opacity: 0.1;
       border-radius: 10px;
     }

@@ -250,7 +250,7 @@ const nextRefresh = computed(() => {
 
 <style lang="scss">
 .subscriptions {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
 
   .spinner {
     z-index: 11;
@@ -258,11 +258,11 @@ const nextRefresh = computed(() => {
 
   &.empty,
   &.loading {
-    height: calc(100vh - $header-height);
+    height: calc(100vh - variables.$header-height);
   }
   .section-title {
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
@@ -287,7 +287,7 @@ const nextRefresh = computed(() => {
   .subscribe-info-container {
     position: relative;
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 30px auto 0 auto;
     padding: 0 10px;
     z-index: 11;
@@ -301,7 +301,7 @@ const nextRefresh = computed(() => {
       background: var(--bgcolor-alt);
       justify-content: space-between;
       border-radius: 5px;
-      box-shadow: $medium-shadow;
+      box-shadow: variables.$medium-shadow;
       box-sizing: border-box;
 
       @media screen and (max-width: 1000px) {
@@ -322,7 +322,7 @@ const nextRefresh = computed(() => {
         flex-direction: row;
         align-items: flex-start;
 
-        @media screen and (max-width: $mobile-width) {
+        @media screen and (max-width: variables.$mobile-width) {
           flex-direction: column;
         }
 
@@ -344,14 +344,14 @@ const nextRefresh = computed(() => {
     .subscription-section {
       .section-videos-container {
         width: 100%;
-        max-width: $main-width;
+        max-width: variables.$main-width;
         margin: 0 auto;
         padding: 0 10px;
         box-sizing: border-box;
         z-index: 10;
-        @include viewtube-grid;
+        @include mixins.viewtube-grid;
 
-        @media screen and (max-width: $mobile-width) {
+        @media screen and (max-width: variables.$mobile-width) {
           flex-direction: column;
         }
       }

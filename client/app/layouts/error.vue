@@ -102,13 +102,13 @@ export default defineComponent({
     z-index: 3;
     width: 500px;
     max-height: 100%;
-    margin-top: $header-height;
+    margin-top: variables.$header-height;
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       position: static;
       transform: none;
       width: 100vw;
-      padding: $header-height 10px 10px 10px;
+      padding: variables.$header-height 10px 10px 10px;
       box-sizing: border-box;
     }
 
@@ -175,13 +175,13 @@ export default defineComponent({
         border-radius: 5px;
         box-sizing: border-box;
         color: var(--title-color);
-        box-shadow: $low-shadow;
-        transition: box-shadow 300ms $intro-easing;
+        box-shadow: variables.$low-shadow;
+        transition: box-shadow 300ms variables.$intro-easing;
         border: 2px solid var(--theme-color);
         user-select: none;
 
         &:hover {
-          box-shadow: $max-shadow;
+          box-shadow: variables.$max-shadow;
         }
       }
     }

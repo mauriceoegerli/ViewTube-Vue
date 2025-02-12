@@ -77,8 +77,8 @@ const cursor = computed(() => uiState.cursor.value);
 .flip-settings-transition-enter-active,
 .flip-settings-transition-leave-active {
   transition:
-    opacity 300ms $intro-easing,
-    transform 300ms $intro-easing;
+    opacity 300ms variables.$intro-easing,
+    transform 300ms variables.$intro-easing;
 }
 .flip-settings-transition-enter-to,
 .flip-settings-transition-leave-from {

@@ -430,8 +430,8 @@ function resetSponsorBlockUrl() {
         top: 0;
         left: 0;
         transition:
-          opacity 300ms $intro-easing,
-          transform 300ms $intro-easing;
+          opacity 300ms variables.$intro-easing,
+          transform 300ms variables.$intro-easing;
         width: 24px;
         height: 24px;
       }
@@ -446,7 +446,7 @@ function resetSponsorBlockUrl() {
       position: absolute;
     }
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       top: 0;
       padding: 15px 0;
     }
@@ -497,7 +497,7 @@ function resetSponsorBlockUrl() {
     width: 50px;
     padding: 2px 5px;
     border-radius: 5px;
-    transition: border 300ms $intro-easing;
+    transition: border 300ms variables.$intro-easing;
 
     &:focus {
       border: 2px solid var(--theme-color);
@@ -537,7 +537,7 @@ function resetSponsorBlockUrl() {
 
     .sponsorblock-options {
       // width: calc(100% - 20px);
-      transition: padding 300ms $intro-easing;
+      transition: padding 300ms variables.$intro-easing;
       overflow: hidden;
 
       .sponsorblock-option {

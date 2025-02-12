@@ -62,7 +62,7 @@ const subscriberCount = computed(() => humanNumber(props.channelInfo?.subscriber
 
   .info {
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     padding: 15px;
     display: grid;
@@ -123,7 +123,7 @@ const subscriberCount = computed(() => humanNumber(props.channelInfo?.subscriber
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
-        box-shadow: $max-shadow;
+        box-shadow: variables.$max-shadow;
         transform: translateY(-50%);
         pointer-events: auto;
       }

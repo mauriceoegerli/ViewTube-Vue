@@ -129,7 +129,7 @@ export default defineComponent({
       all: unset;
       width: 50px;
       height: 24px;
-      background-image: $theme-color-primary-gradient;
+      background-image: variables.$theme-color-primary-gradient;
       border-radius: 15px;
       background-repeat: no-repeat;
 
@@ -179,7 +179,7 @@ export default defineComponent({
         display: block;
         margin: 3px;
         position: relative;
-        transition: background-color 300ms $intro-easing;
+        transition: background-color 300ms variables.$intro-easing;
 
         .switch-circle-inner {
           left: 0;
@@ -191,8 +191,8 @@ export default defineComponent({
           display: block;
           position: absolute;
           transition:
-            background-color 300ms $intro-easing,
-            left 300ms $overshoot-easing;
+            background-color 300ms variables.$intro-easing,
+            left 300ms variables.$overshoot-easing;
         }
       }
     }

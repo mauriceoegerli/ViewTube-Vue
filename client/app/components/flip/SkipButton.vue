@@ -75,8 +75,8 @@ const currentSponsorBlockSegment = computed(() => {
   opacity: 0;
   overflow: hidden;
   transition:
-    opacity 300ms $intro-easing,
-    transform 300ms $intro-easing;
+    opacity 300ms variables.$intro-easing,
+    transform 300ms variables.$intro-easing;
   user-select: none;
   display: flex;
   flex-direction: column;
@@ -88,9 +88,9 @@ const currentSponsorBlockSegment = computed(() => {
       opacity: 1;
 
       transition:
-        height 200ms $intro-easing,
-        width 200ms $intro-easing,
-        opacity 200ms $intro-easing;
+        height 200ms variables.$intro-easing,
+        width 200ms variables.$intro-easing,
+        opacity 200ms variables.$intro-easing;
     }
   }
 
@@ -103,9 +103,9 @@ const currentSponsorBlockSegment = computed(() => {
     opacity: 0;
     white-space: nowrap;
     transition:
-      height 200ms $intro-easing,
+      height 200ms variables.$intro-easing,
       width 200ms ease-in,
-      opacity 200ms $intro-easing;
+      opacity 200ms variables.$intro-easing;
 
     .key-hint {
       background-color: var(--bgcolor-alt-light);

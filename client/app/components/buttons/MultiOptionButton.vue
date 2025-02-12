@@ -81,7 +81,7 @@ if (!props.options || new Set(props.options).size !== props.options.length) {
   }
 
   .multi-option-body {
-    background-image: $theme-color-primary-gradient;
+    background-image: variables.$theme-color-primary-gradient;
     border-radius: 5px;
     display: flex;
     padding: 2px 0 2px 2px;
@@ -93,8 +93,8 @@ if (!props.options || new Set(props.options).size !== props.options.length) {
       cursor: pointer;
       color: var(--title-color);
       transition:
-        background-color 300ms $intro-easing,
-        color 300ms $intro-easing;
+        background-color 300ms variables.$intro-easing,
+        color 300ms variables.$intro-easing;
 
       &.selected {
         background-color: transparent;

@@ -163,8 +163,8 @@ const currentSponsorBlockSegmentColor = computed(() => {
   pointer-events: none;
   user-select: none;
   opacity: 0;
-  transition: opacity 200ms $intro-easing;
-  box-shadow: $medium-shadow;
+  transition: opacity 200ms variables.$intro-easing;
+  box-shadow: variables.$medium-shadow;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -183,7 +183,7 @@ const currentSponsorBlockSegmentColor = computed(() => {
       v-bind(currentSponsorBlockSegmentColor),
       rgba(0, 0, 0, 0) 30%
     );
-    transition: opacity 200ms $intro-easing;
+    transition: opacity 200ms variables.$intro-easing;
     opacity: 0;
     z-index: -1;
 
@@ -201,8 +201,8 @@ const currentSponsorBlockSegmentColor = computed(() => {
     .preview-info-element {
       height: 0;
       transition:
-        height 200ms $intro-easing,
-        opacity 200ms $intro-easing;
+        height 200ms variables.$intro-easing,
+        opacity 200ms variables.$intro-easing;
       font-size: 0.9rem;
       display: flex;
       gap: 5px;

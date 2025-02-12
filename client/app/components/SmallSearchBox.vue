@@ -31,7 +31,7 @@ const onInput = (e: Event) => {
 .small-search {
   width: 100%;
   display: flex;
-  max-width: $main-width;
+  max-width: variables.$main-width;
   margin: 0 auto;
   z-index: 11;
   position: relative;
@@ -55,15 +55,15 @@ const onInput = (e: Event) => {
     position: absolute;
     user-select: none;
     pointer-events: none;
-    transition: opacity 300ms $intro-easing;
+    transition: opacity 300ms variables.$intro-easing;
   }
   .small-search-box {
     all: unset;
     border-bottom: solid 3px var(--theme-color-translucent);
     padding: 4px 5px;
     width: 100%;
-    max-width: $mobile-width;
-    transition: border 300ms $intro-easing;
+    max-width: variables.$mobile-width;
+    transition: border 300ms variables.$intro-easing;
 
     &:focus {
       border-color: var(--theme-color);

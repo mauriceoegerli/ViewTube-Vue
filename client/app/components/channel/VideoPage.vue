@@ -106,12 +106,12 @@ const sortBy = computed<ChannelVideosSortOptionsType | ChannelPlaylistsSortOptio
 
   .videos-container {
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
     background-color: var(--bgcolor-main);
-    @include viewtube-grid;
+    @include mixins.viewtube-grid;
   }
 
   .show-more {

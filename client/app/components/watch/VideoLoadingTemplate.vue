@@ -30,7 +30,7 @@ export default defineComponent({
 
 <style lang="scss">
 .video-loading-template {
-  height: calc(100vh - #{$header-height});
+  height: calc(100vh - #{variables.$header-height});
   position: relative;
 
   .centered-card {
@@ -46,7 +46,7 @@ export default defineComponent({
     max-width: 500px;
 
     .fade-in {
-      animation: card-fade-in 300ms 1s $intro-easing forwards;
+      animation: card-fade-in 300ms 1s variables.$intro-easing forwards;
       opacity: 0;
     }
   }

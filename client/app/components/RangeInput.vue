@@ -86,7 +86,7 @@ const onPointerUp = (e: PointerEvent) => {
     border-radius: 25px;
 
     .range-filled {
-      background-color: $video-thmb-overlay-textcolor;
+      background-color: variables.$video-thmb-overlay-textcolor;
       height: 100%;
       width: v-bind(rangePercentage);
       border-radius: 25px;
@@ -95,7 +95,7 @@ const onPointerUp = (e: PointerEvent) => {
     .dot {
       width: 12px;
       height: 12px;
-      background-color: $video-thmb-overlay-textcolor;
+      background-color: variables.$video-thmb-overlay-textcolor;
       position: relative;
       left: calc(v-bind(rangePercentage) - 6px);
       border-radius: 50%;

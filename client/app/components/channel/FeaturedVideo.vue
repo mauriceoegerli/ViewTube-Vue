@@ -41,7 +41,7 @@ const hidePlaceholder = () => {
 
 <style lang="scss" scoped>
 .fade-leave-active {
-  transition: opacity 300ms $intro-easing;
+  transition: opacity 300ms variables.$intro-easing;
 }
 .fade-leave-to {
   opacity: 0;
@@ -54,8 +54,8 @@ const hidePlaceholder = () => {
   grid-template-rows: calc(100vw / 3 * 2 / 16 * 9);
   column-gap: 15px;
 
-  @media screen and (min-width: $main-width) {
-    grid-template-rows: calc(#{$main-width} / 3 * 2 / 16 * 9);
+  @media screen and (min-width: variables.$main-width) {
+    grid-template-rows: calc(#{variables.$main-width} / 3 * 2 / 16 * 9);
   }
 
   .video-embed {

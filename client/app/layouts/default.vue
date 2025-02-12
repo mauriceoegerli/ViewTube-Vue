@@ -48,5 +48,5 @@ if (appRef.value) {
 </template>
 
 <style lang="scss">
-@import 'assets/styles/layout.scss';
+@use 'assets/styles/layout.scss';
 </style>

@@ -191,12 +191,12 @@ watch(searchTerm, (newValue, oldValue): void => {
 
 <style lang="scss" scoped>
 .manage-subscriptions {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
   overflow: hidden;
   width: 100%;
 
   .section-title {
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
@@ -214,7 +214,7 @@ watch(searchTerm, (newValue, oldValue): void => {
 
   .channels-container {
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     z-index: 11;
     display: flex;
@@ -238,7 +238,7 @@ watch(searchTerm, (newValue, oldValue): void => {
       .channel-image-container {
         width: 36px;
         height: 36px;
-        box-shadow: $low-shadow;
+        box-shadow: variables.$low-shadow;
 
         .channel-image {
           width: 100%;
@@ -251,7 +251,7 @@ watch(searchTerm, (newValue, oldValue): void => {
         height: 36px;
         width: 36px;
         display: flex;
-        box-shadow: $low-shadow;
+        box-shadow: variables.$low-shadow;
 
         h3 {
           font-size: 1.8rem;

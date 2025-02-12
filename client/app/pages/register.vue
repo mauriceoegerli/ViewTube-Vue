@@ -15,11 +15,11 @@ import RegisterForm from '~/components/form/RegisterForm.vue';
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--bgcolor-alt);
-  height: calc(100vh - #{$header-height});
-  padding: $header-height 0 0 0;
+  height: calc(100vh - #{variables.$header-height});
+  padding: variables.$header-height 0 0 0;
   overflow: scroll;
 
-  @media screen and (min-width: $mobile-width) {
+  @media screen and (min-width: variables.$mobile-width) {
     background-image: url('~/assets/blur-bg-medium-dark.jpg');
   }
 }

@@ -173,8 +173,8 @@ watch(
 .popup-enter-active,
 .popup-leave-active {
   transition:
-    opacity 300ms $intro-easing,
-    transform 300ms $intro-easing;
+    opacity 300ms variables.$intro-easing,
+    transform 300ms variables.$intro-easing;
 }
 .popup-enter-to,
 .popup-leave-from {
@@ -190,7 +190,7 @@ watch(
 .history {
   width: 100%;
   max-width: 800px;
-  padding-top: $header-height;
+  padding-top: variables.$header-height;
   margin: 0 auto;
   overflow: hidden;
 
@@ -261,7 +261,7 @@ watch(
   background-color: var(--bgcolor-alt) !important;
   border: none !important;
   border-radius: 10px;
-  box-shadow: $medium-shadow;
+  box-shadow: variables.$medium-shadow;
 
   .mx-btn {
     &:hover {

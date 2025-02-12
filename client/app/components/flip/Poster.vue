@@ -55,8 +55,8 @@ const posterThumbnail = computed(() => {
 .fade-enter-active,
 .fade-leave-active {
   transition:
-    opacity 400ms $intro-easing,
-    filter 400ms $intro-easing;
+    opacity 400ms variables.$intro-easing,
+    filter 400ms variables.$intro-easing;
 }
 .fade-enter-from,
 .fade-leave-to {
@@ -92,9 +92,9 @@ const posterThumbnail = computed(() => {
     left: calc(50% - 50px);
     font-size: 4rem;
     color: #fff;
-    text-shadow: $low-shadow;
+    text-shadow: variables.$low-shadow;
     filter: drop-shadow(0 4px 12px var(--theme-color-alt));
-    animation: play-icon-animation 400ms $intro-easing;
+    animation: play-icon-animation 400ms variables.$intro-easing;
   }
 
   .flip-poster-img {

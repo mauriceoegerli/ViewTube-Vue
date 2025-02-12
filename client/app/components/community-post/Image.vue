@@ -17,7 +17,7 @@ const postImageSources = computed(() => {
   const sizes = images
     .map(({ width }, index) => {
       if (index === images.length - 1) return `${width}px`;
-      return `(max-width: ${width + 100}px) ${width}px`;
+      return `(max-width: ${width + 100}px) variables.${width}px`;
     })
     .join();
 
@@ -55,7 +55,7 @@ const postImageHeightPx = ref('0px');
 .post-image-container {
   cursor: zoom-in;
   overflow: hidden;
-  transition: height 300ms $intro-easing;
+  transition: height 300ms variables.$intro-easing;
 
   .post-image {
     width: 100%;
@@ -73,8 +73,8 @@ const postImageHeightPx = ref('0px');
       top: 50%;
       transform: translateY(-50%);
       transition:
-        top 300ms $intro-easing,
-        transform 300ms $intro-easing;
+        top 300ms variables.$intro-easing,
+        transform 300ms variables.$intro-easing;
       display: block;
     }
 

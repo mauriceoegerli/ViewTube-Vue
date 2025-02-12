@@ -32,8 +32,8 @@ export default defineComponent({
   border-radius: 3px;
   display: inline-block;
   transition:
-    background-color 200ms $intro-easing,
-    border 200ms $intro-easing;
+    background-color 200ms variables.$intro-easing,
+    border 200ms variables.$intro-easing;
   border: 2px solid var(--theme-color-translucent);
   width: auto;
   white-space: nowrap;

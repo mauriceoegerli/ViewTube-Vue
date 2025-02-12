@@ -120,10 +120,10 @@ visible.value = true;
     background-color: transparent;
     z-index: 400;
     overscroll-behavior: contain;
-    transition: background-color 300ms $intro-easing;
+    transition: background-color 300ms variables.$intro-easing;
   }
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     &.open:after {
       background-color: var(--bgcolor-translucent);
       pointer-events: auto;
@@ -157,7 +157,7 @@ visible.value = true;
 
     .dropdown-title {
       line-height: 30px;
-      background-image: $theme-color-primary-gradient;
+      background-image: variables.$theme-color-primary-gradient;
       background-size: 0% 2px;
       background-position: 0 100%;
       background-repeat: no-repeat;
@@ -192,7 +192,7 @@ visible.value = true;
   border-radius: 5px;
   transition-property: transform, clip-path, box-shadow;
   transition-duration: 300ms;
-  transition-timing-function: $intro-easing;
+  transition-timing-function: variables.$intro-easing;
   overflow: auto;
   padding: 5px 0;
   z-index: 901;
@@ -201,7 +201,7 @@ visible.value = true;
   transform: scale(0.8);
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     width: calc(100% - 28px) !important;
     top: 50vh !important;
     left: 0 !important;
@@ -212,8 +212,8 @@ visible.value = true;
     clip-path: none !important;
     transform-origin: center top !important;
     transition:
-      opacity 300ms 0ms $intro-easing,
-      transform 600ms $outro-easing,
+      opacity 300ms 0ms variables.$intro-easing,
+      transform 600ms variables.$outro-easing,
       box-shadow 300ms,
       pointer-events 0ms !important;
     opacity: 0;
@@ -223,7 +223,7 @@ visible.value = true;
       clip-path: none !important;
       transform: scale(1) translateY(-50%) !important;
       transition:
-        opacity 200ms 100ms $intro-easing,
+        opacity 200ms 100ms variables.$intro-easing,
         transform 300ms cubic-bezier(0, 0.98, 0.21, 0.98),
         box-shadow 300ms !important;
       opacity: 1;
@@ -234,7 +234,7 @@ visible.value = true;
   &.open {
     clip-path: polygon(-50% -50%, 150% -50%, 150% 150%, -50% 150%);
     transform: scale(1);
-    box-shadow: $max-shadow;
+    box-shadow: variables.$max-shadow;
   }
 
   .list-entry {
@@ -242,7 +242,7 @@ visible.value = true;
     cursor: pointer;
     white-space: nowrap;
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       padding: 14px 10px 14px 10px;
     }
 

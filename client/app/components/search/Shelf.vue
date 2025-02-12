@@ -31,7 +31,7 @@ export default defineComponent({
   position: relative;
 
   .shelf-container {
-    @include viewtube-grid;
+    @include mixins.viewtube-grid;
   }
 
   &::after {

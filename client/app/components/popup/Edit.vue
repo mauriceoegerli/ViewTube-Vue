@@ -50,8 +50,8 @@ const confirm = () => {
 .popup-enter-active,
 .popup-leave-active {
   transition:
-    opacity 300ms $intro-easing,
-    transform 300ms $intro-easing;
+    opacity 300ms variables.$intro-easing,
+    transform 300ms variables.$intro-easing;
 }
 .popup-enter-to,
 .popup-leave-from {
@@ -100,7 +100,7 @@ const confirm = () => {
   .confirmation {
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: $max-shadow;
+    box-shadow: variables.$max-shadow;
     z-index: 9;
     position: fixed;
     top: 50%;

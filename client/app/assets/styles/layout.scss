@@ -1,3 +1,5 @@
+@use "~/assets/styles/global/variables.scss" as variables;
+
 .x-ripple-js__ripple-button {
   position: relative;
   overflow: hidden;
@@ -45,7 +47,7 @@ vite-error-overlay {
   background-color: var(--bgcolor-main);
 
   .progress-bar-margin {
-    top: $header-height - 3px !important;
+    top: variables.$header-height - 3px !important;
   }
 
   .content {
@@ -116,9 +118,9 @@ span.links {
     color: var(--theme-color-alt);
     position: relative;
     transition:
-      background-size 300ms $dynamic-easing,
-      color 300ms $intro-easing;
-    background-image: $theme-color-primary-gradient;
+      background-size 300ms variables.$dynamic-easing,
+      color 300ms variables.$intro-easing;
+    background-image: variables.$theme-color-primary-gradient;
     background-size: 0% 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;

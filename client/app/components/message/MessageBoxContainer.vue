@@ -25,10 +25,10 @@ const messagesStore = useMessagesStore();
   display: flex;
   z-index: 1000;
   padding: 0 10px;
-  margin: $header-height 0 0 0;
+  margin: variables.$header-height 0 0 0;
   flex-direction: column;
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     flex-direction: column-reverse;
     top: unset;
     bottom: 0;

@@ -423,7 +423,7 @@ const videoViewsText = computed(() => {
     // background-color: #34363b;
     z-index: 10;
     transition-duration: 300ms;
-    transition-timing-function: $intro-easing;
+    transition-timing-function: variables.$intro-easing;
     transition-property: box-shadow;
   }
 
@@ -445,13 +445,13 @@ const videoViewsText = computed(() => {
     margin: 5px;
     opacity: 0;
     transform: scale(0.8);
-    background-color: $video-thmb-overlay-bgcolor;
+    background-color: variables.$video-thmb-overlay-bgcolor;
     border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;
     transition:
-      opacity 200ms $intro-easing,
-      transform 200ms $intro-easing;
+      opacity 200ms variables.$intro-easing,
+      transform 200ms variables.$intro-easing;
   }
 
   #show-description {
@@ -481,14 +481,14 @@ const videoViewsText = computed(() => {
   .video-entry-thmb {
     position: relative;
     z-index: 11;
-    box-shadow: $medium-shadow;
+    box-shadow: variables.$medium-shadow;
     overflow: hidden;
     padding-top: 56.25%;
 
     &:hover {
       .rich-thumbnail {
         opacity: 1 !important;
-        transition: opacity 150ms 300ms $intro-easing !important;
+        transition: opacity 150ms 300ms variables.$intro-easing !important;
       }
     }
 
@@ -501,7 +501,7 @@ const videoViewsText = computed(() => {
 
       &.rich-thumbnail {
         opacity: 0;
-        transition: opacity 150ms $intro-easing;
+        transition: opacity 150ms variables.$intro-easing;
         pointer-events: none;
       }
 
@@ -512,7 +512,7 @@ const videoViewsText = computed(() => {
           display: block;
           max-width: 100%;
           min-width: 100%;
-          transition: filter 0ms 300ms $intro-easing;
+          transition: filter 0ms 300ms variables.$intro-easing;
         }
       }
 
@@ -525,13 +525,13 @@ const videoViewsText = computed(() => {
         width: 100%;
         height: 0;
         transform: translateY(-50%);
-        color: $video-thmb-overlay-textcolor;
+        color: variables.$video-thmb-overlay-textcolor;
         overflow: visible;
         background-color: #0000009f;
         box-sizing: border-box;
         font-size: 1rem;
         opacity: 0;
-        transition: opacity 200ms $intro-easing;
+        transition: opacity 200ms variables.$intro-easing;
 
         .video-description-overlay-text {
           width: 100%;
@@ -544,16 +544,16 @@ const videoViewsText = computed(() => {
 
     .video-live {
       text-decoration: none;
-      color: $video-thmb-overlay-textcolor;
+      color: variables.$video-thmb-overlay-textcolor;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       padding: 5px 12px;
-      background-color: $video-thmb-overlay-bgcolor;
+      background-color: variables.$video-thmb-overlay-bgcolor;
       box-sizing: border-box;
       border-radius: 5px;
-      font-family: $default-font;
+      font-family: variables.$default-font;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -575,17 +575,17 @@ const videoViewsText = computed(() => {
 
     .video-entry-length {
       text-decoration: none;
-      color: $video-thmb-overlay-textcolor;
+      color: variables.$video-thmb-overlay-textcolor;
       position: absolute;
       right: 0;
       bottom: 0;
       padding: 2px 6px;
       margin: 8px 8px;
-      background-color: $video-thmb-overlay-bgcolor;
+      background-color: variables.$video-thmb-overlay-bgcolor;
       box-sizing: border-box;
       border-radius: 4px;
-      font-family: $default-font;
-      transition: transform 200ms $intro-easing;
+      font-family: variables.$default-font;
+      transition: transform 200ms variables.$intro-easing;
     }
 
     .video-entry-watched {
@@ -605,7 +605,7 @@ const videoViewsText = computed(() => {
 
   .video-entry-info {
     padding: 0 0 5px 0;
-    font-family: $default-font;
+    font-family: variables.$default-font;
     overflow: hidden;
     display: flex;
     flex-direction: row;

@@ -204,8 +204,8 @@ onBeforeUnmount((): void => {
 .fade-top-right-enter-active,
 .fade-top-right-leave-active {
   transition:
-    opacity 300ms $intro-easing,
-    transform 300ms $intro-easing;
+    opacity 300ms variables.$intro-easing,
+    transform 300ms variables.$intro-easing;
 }
 .fade-top-right-enter-to,
 .fade-top-right-leave-from {
@@ -221,8 +221,8 @@ onBeforeUnmount((): void => {
 .fade-down-enter-active,
 .fade-down-leave-active {
   transition:
-    transform 200ms $intro-easing,
-    opacity 200ms $intro-easing;
+    transform 200ms variables.$intro-easing,
+    opacity 200ms variables.$intro-easing;
 }
 .fade-down-enter-to,
 .fade-down-leave-from {
@@ -264,7 +264,7 @@ onBeforeUnmount((): void => {
   z-index: 900;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 300ms $intro-easing;
+  transition: opacity 300ms variables.$intro-easing;
 
   &.visible {
     opacity: 1;
@@ -296,12 +296,12 @@ onBeforeUnmount((): void => {
       .account-name {
         color: var(--theme-color);
         padding: 0 0 0 4px;
-        @media screen and (max-width: $mobile-width) {
+        @media screen and (max-width: variables.$mobile-width) {
           display: none;
         }
       }
 
-      @media screen and (max-width: $mobile-width) {
+      @media screen and (max-width: variables.$mobile-width) {
         height: 35px;
         .user-icon {
           height: 35px;
@@ -334,7 +334,7 @@ onBeforeUnmount((): void => {
   a:not(.nav-btn):not(.menu-btn) {
     text-decoration: none;
     color: var(--theme-color);
-    transition: color 300ms $intro-easing;
+    transition: color 300ms variables.$intro-easing;
     margin: 0 6px;
     display: flex;
     user-select: none;
@@ -354,8 +354,8 @@ onBeforeUnmount((): void => {
     text-decoration: none;
     color: var(--theme-color);
     transition:
-      color 300ms $intro-easing,
-      border 300ms $intro-easing;
+      color 300ms variables.$intro-easing,
+      border 300ms variables.$intro-easing;
     margin: 0 5px;
     display: flex;
     user-select: none;
@@ -371,7 +371,7 @@ onBeforeUnmount((): void => {
       min-width: 75px;
     }
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: variables.$mobile-width) {
       display: none;
     }
 

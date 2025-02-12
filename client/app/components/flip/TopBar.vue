@@ -24,7 +24,7 @@ defineProps<{
   left: 0;
   width: 100%;
   padding: 15px;
-  background: $video-player-gradient;
+  background: variables.$video-player-gradient;
 
   .flip-video-info {
     display: flex;

@@ -156,7 +156,7 @@ export default defineComponent({
   width: 140px;
   height: 32px;
   position: relative;
-  transition: filter 300ms $intro-easing;
+  transition: filter 300ms variables.$intro-easing;
 
   &.disabled {
     pointer-events: none;
@@ -175,8 +175,8 @@ export default defineComponent({
     user-select: none;
     opacity: 0.8;
     transition:
-      transform 300ms $overshoot-easing,
-      background-color 300ms $intro-easing;
+      transform 300ms variables.$overshoot-easing,
+      background-color 300ms variables.$intro-easing;
     border: solid 2px transparent;
     box-sizing: border-box;
 
@@ -207,7 +207,7 @@ export default defineComponent({
     opacity: 0;
     pointer-events: none;
     transition-duration: 300ms;
-    transition-timing-function: $intro-easing;
+    transition-timing-function: variables.$intro-easing;
     transition-property: clip-path, opacity, transform;
 
     &.expanded {
@@ -234,8 +234,8 @@ export default defineComponent({
       line-height: 12px;
       opacity: 1;
       transition:
-        opacity 300ms $intro-easing,
-        transform 300ms $intro-easing;
+        opacity 300ms variables.$intro-easing,
+        transform 300ms variables.$intro-easing;
 
       &:focus {
         transform: scale(0.9);
@@ -259,14 +259,14 @@ export default defineComponent({
         transition: 0.3s opacity ease-in-out;
         filter: blur(20px);
         opacity: 0;
-        background: $theme-color-primary-gradient;
+        background: variables.$theme-color-primary-gradient;
       }
 
       &:hover:before {
         opacity: 1;
         transition: 0.3s opacity ease-in-out;
         filter: blur(20px);
-        background: $theme-color-primary-gradient;
+        background: variables.$theme-color-primary-gradient;
       }
 
       &:after {
@@ -283,14 +283,14 @@ export default defineComponent({
         height: 100%;
         top: 0%;
         left: 0%;
-        background: $theme-color-primary-gradient;
+        background: variables.$theme-color-primary-gradient;
       }
     }
 
     .subscribe-button {
       &:after {
         content: 'SUBSCRIBE';
-        font-family: $default-font;
+        font-family: variables.$default-font;
       }
     }
 
@@ -298,19 +298,19 @@ export default defineComponent({
       width: 140px;
 
       &:before {
-        background: $bgcolor-gradient;
+        background: variables.$bgcolor-gradient;
       }
 
       &:hover:before {
         opacity: 1;
         transition: 0.3s opacity ease-in-out;
         filter: blur(20px);
-        background: $bgcolor-gradient;
+        background: variables.$bgcolor-gradient;
       }
 
       &:after {
         content: 'UNSUBSCRIBE';
-        font-family: $default-font;
+        font-family: variables.$default-font;
         background: var(--bgcolor-alt-light);
       }
     }

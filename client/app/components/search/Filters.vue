@@ -163,7 +163,7 @@ refreshQuery();
       position: relative;
       padding: 15px 0 45px 0;
 
-      @media screen and (max-width: $mobile-width) {
+      @media screen and (max-width: variables.$mobile-width) {
         flex-wrap: wrap;
 
         .filter {
@@ -248,7 +248,7 @@ refreshQuery();
             }
 
             p {
-              transition: color 300ms $intro-easing;
+              transition: color 300ms variables.$intro-easing;
             }
 
             input:checked ~ p {
@@ -269,8 +269,8 @@ refreshQuery();
               border: solid 3px var(--subtitle-color);
               border-radius: 50%;
               transition:
-                border 300ms $intro-easing,
-                background-color 300ms $intro-easing;
+                border 300ms variables.$intro-easing,
+                background-color 300ms variables.$intro-easing;
 
               &.multiple {
                 border-radius: 3px;

@@ -182,7 +182,7 @@ const loadMoreVideos = async () => {
 
 <style lang="scss">
 .search {
-  margin-top: $header-height;
+  margin-top: variables.$header-height;
   display: flex;
   flex-direction: column;
 
@@ -196,7 +196,7 @@ const loadMoreVideos = async () => {
 
   .filters {
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     padding: 15px 15px 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -217,7 +217,7 @@ const loadMoreVideos = async () => {
   .result-amount {
     z-index: 10;
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     padding: 0 15px;
     box-sizing: border-box;
   }
@@ -231,7 +231,7 @@ const loadMoreVideos = async () => {
       position: relative;
       z-index: 10;
       width: 100%;
-      max-width: $main-width;
+      max-width: variables.$main-width;
       margin: 0 auto 10px auto;
       padding: 0 15px;
       box-sizing: border-box;
@@ -240,14 +240,14 @@ const loadMoreVideos = async () => {
 
   .search-videos-container {
     width: 100%;
-    max-width: $main-width;
+    max-width: variables.$main-width;
     margin: 0 auto;
     padding: 0 15px;
     z-index: 10;
     display: grid;
     box-sizing: border-box;
     display: grid;
-    @include viewtube-grid;
+    @include mixins.viewtube-grid;
 
     .section-title {
       grid-column: 1 / -1;

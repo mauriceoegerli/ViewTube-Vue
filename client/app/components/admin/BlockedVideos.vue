@@ -56,7 +56,7 @@ const removeVideo = async (videoId: string) => {
       :deep(.remove-btn) {
         opacity: 0;
         margin: 0;
-        transition: opacity 200ms $intro-easing;
+        transition: opacity 200ms variables.$intro-easing;
         pointer-events: none;
 
         :deep(.content) {
@@ -68,8 +68,8 @@ const removeVideo = async (videoId: string) => {
         :deep(.remove-btn) {
           opacity: 1;
           transition:
-            opacity 200ms 200ms $intro-easing,
-            pointer-events 200ms 200ms $intro-easing;
+            opacity 200ms 200ms variables.$intro-easing,
+            pointer-events 200ms 200ms variables.$intro-easing;
           pointer-events: auto;
         }
       }

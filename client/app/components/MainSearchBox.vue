@@ -162,18 +162,18 @@ updateSearchValueFromUrl();
   height: 32px;
   margin: auto;
   width: 100%;
-  max-width: $search-box-width;
+  max-width: variables.$search-box-width;
   justify-content: flex-end;
   position: relative;
   border-radius: 3px;
   background-color: var(--bgcolor-translucent);
-  transition: background-color 300ms $intro-easing;
+  transition: background-color 300ms variables.$intro-easing;
   z-index: +1;
 
   .search-btn {
     text-decoration: none;
     color: var(--subtitle-color);
-    transition: color 300ms $intro-easing;
+    transition: color 300ms variables.$intro-easing;
     width: 50px;
     text-align: center;
     display: flex;
@@ -200,8 +200,8 @@ updateSearchValueFromUrl();
       pointer-events: none;
       user-select: none;
       transition:
-        opacity 300ms $intro-easing,
-        transform 300ms $intro-easing;
+        opacity 300ms variables.$intro-easing,
+        transform 300ms variables.$intro-easing;
       margin: 0 0 0 10px;
       color: var(--subtitle-color-light);
     }
@@ -252,7 +252,7 @@ updateSearchValueFromUrl();
     height: 1.5px;
     width: 1.5px;
     transform: scale(0);
-    transition: transform 300ms $intro-easing;
+    transition: transform 300ms variables.$intro-easing;
   }
 
   .search-line-bottom {

@@ -115,10 +115,10 @@ export default defineComponent({
     overflow: hidden;
     position: relative;
     transition:
-      box-shadow 200ms $intro-easing,
-      border-color 200ms $intro-easing;
+      box-shadow 200ms variables.$intro-easing,
+      border-color 200ms variables.$intro-easing;
     box-sizing: border-box;
-    box-shadow: $low-shadow;
+    box-shadow: variables.$low-shadow;
     cursor: pointer;
 
     &:focus::after {
@@ -126,7 +126,7 @@ export default defineComponent({
     }
 
     &:hover {
-      box-shadow: $max-shadow;
+      box-shadow: variables.$max-shadow;
     }
 
     .preview-graphic {

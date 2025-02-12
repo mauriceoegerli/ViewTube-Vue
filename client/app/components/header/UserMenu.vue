@@ -127,8 +127,8 @@ const openPopup = (popup: string) => {
 .popup-enter-active,
 .popup-leave-active {
   transition:
-    opacity 300ms $intro-easing,
-    transform 300ms $intro-easing;
+    opacity 300ms variables.$intro-easing,
+    transform 300ms variables.$intro-easing;
 }
 .popup-enter-to,
 .popup-leave-from {
@@ -143,10 +143,10 @@ const openPopup = (popup: string) => {
 
 .user-menu {
   position: fixed;
-  top: $header-height + 15px;
+  top: variables.$header-height + 15px;
   right: 20px;
   width: calc(100% - 40px);
-  max-height: calc(100% - $header-height - 30px);
+  max-height: calc(100% - variables.$header-height - 30px);
   max-width: 350px;
   z-index: 1000;
   padding-bottom: 10px;
@@ -155,7 +155,7 @@ const openPopup = (popup: string) => {
   box-sizing: border-box;
   overflow: hidden auto;
 
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: variables.$mobile-width) {
     max-width: 100%;
   }
 
@@ -169,7 +169,7 @@ const openPopup = (popup: string) => {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    transition: background-color 200ms $intro-easing;
+    transition: background-color 200ms variables.$intro-easing;
     overflow: hidden;
 
     .avatar-background {
@@ -231,7 +231,7 @@ const openPopup = (popup: string) => {
       margin: auto 0;
       display: flex;
       gap: 15px;
-      transition: color 200ms $intro-easing;
+      transition: color 200ms variables.$intro-easing;
       font-size: 0.9rem;
       cursor: pointer;
       text-decoration: none;
@@ -242,7 +242,7 @@ const openPopup = (popup: string) => {
       line-height: 24px;
 
       &.mobile-only {
-        @media screen and (min-width: $mobile-width) {
+        @media screen and (min-width: variables.$mobile-width) {
           display: none;
         }
       }

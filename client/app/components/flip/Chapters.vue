@@ -48,7 +48,7 @@ const chapters = computed(() => {
     width: 3px;
     background-color: var(--line-accent-color);
     bottom: 2px;
-    transition: height 300ms $intro-easing;
+    transition: height 300ms variables.$intro-easing;
     border-radius: 5px;
   }
 }

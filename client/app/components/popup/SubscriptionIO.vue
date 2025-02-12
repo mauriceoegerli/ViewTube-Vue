@@ -326,7 +326,7 @@ const importSelected = async () => {
         background-color: var(--bgcolor-alt);
         opacity: 0;
         pointer-events: none;
-        transition: opacity 300ms $intro-easing;
+        transition: opacity 300ms variables.$intro-easing;
 
         .loading-text {
           position: absolute;
@@ -372,8 +372,8 @@ const importSelected = async () => {
         opacity: 0;
         transform: translateX(10px);
         transition:
-          transform 300ms $overshoot-easing,
-          opacity 300ms $intro-easing;
+          transform 300ms variables.$overshoot-easing,
+          opacity 300ms variables.$intro-easing;
 
         .list-actions {
           display: flex;

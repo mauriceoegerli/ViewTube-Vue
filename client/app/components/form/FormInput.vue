@@ -79,10 +79,10 @@ const autocompleteTag = computed((): string => autocompleteTags[props.type] ?? '
     font-size: 1rem;
     color: var(--title-color);
     box-sizing: border-box;
-    font-family: $default-font;
+    font-family: variables.$default-font;
     background-color: transparent;
     border: 2px solid var(--bgcolor-alt-light);
-    transition: border 300ms $intro-easing;
+    transition: border 300ms variables.$intro-easing;
 
     &:focus {
       outline: none;
@@ -110,8 +110,8 @@ const autocompleteTag = computed((): string => autocompleteTags[props.type] ?? '
     margin: auto;
     pointer-events: none;
     transition:
-      transform 300ms $intro-easing,
-      color 300ms $intro-easing;
+      transform 300ms variables.$intro-easing,
+      color 300ms variables.$intro-easing;
     transform-origin: left top;
     color: var(--subtitle-color-light);
   }

@@ -41,7 +41,7 @@ const onMouseOver = (e: { target: any }) => {
 <style lang="scss" scoped>
 .clip-enter-active,
 .clip-leave-active {
-  transition: clip-path 200ms $intro-easing;
+  transition: clip-path 200ms variables.$intro-easing;
 }
 .clip-enter-to,
 .clip-leave-from {
@@ -57,14 +57,14 @@ const onMouseOver = (e: { target: any }) => {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: math.div($header-height, 2);
+  margin-top: math.div(variables.$header-height, 2);
   background-color: var(--header-bgcolor);
   display: flex;
   flex-direction: column;
-  box-shadow: $medium-shadow;
+  box-shadow: variables.$medium-shadow;
 
-  @media screen and (max-width: $mobile-width) {
-    top: math.div($header-height, 2);
+  @media screen and (max-width: variables.$mobile-width) {
+    top: math.div(variables.$header-height, 2);
     position: fixed;
     width: 100%;
   }
@@ -74,7 +74,7 @@ const onMouseOver = (e: { target: any }) => {
     cursor: default;
     color: var(--title-color);
     text-decoration: none;
-    font-family: $default-font;
+    font-family: variables.$default-font;
     font-size: 1rem;
 
     &.selected {

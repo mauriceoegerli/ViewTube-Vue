@@ -78,7 +78,7 @@ export default defineComponent({
   .mix-entry-thmb {
     overflow: hidden;
     position: relative;
-    box-shadow: $medium-shadow;
+    box-shadow: variables.$medium-shadow;
     z-index: 11;
 
     .thmb-image-container {
@@ -96,16 +96,16 @@ export default defineComponent({
     }
     .mix-entry-count {
       text-decoration: none;
-      color: $video-thmb-overlay-textcolor;
+      color: variables.$video-thmb-overlay-textcolor;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       padding: 5px 12px;
-      background-color: $video-thmb-overlay-bgcolor;
+      background-color: variables.$video-thmb-overlay-bgcolor;
       box-sizing: border-box;
       border-radius: 5px;
-      font-family: $default-font;
+      font-family: variables.$default-font;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -128,7 +128,7 @@ export default defineComponent({
 
   .mix-entry-info {
     padding: 10px 0 10px 0;
-    font-family: $default-font;
+    font-family: variables.$default-font;
     overflow: hidden;
     display: flex;
     flex-direction: column;
