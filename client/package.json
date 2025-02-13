@@ -19,7 +19,7 @@
     "@pinia-plugin-persistedstate/nuxt": "1.2.1",
     "@pinia/nuxt": "0.5.5",
     "@types/humanize-duration": "3.27.4",
-    "@types/node": "22.7.4",
+    "@types/node": "22.13.4",
     "@types/papaparse": "5.3.14",
     "@types/qrcode": "1.5.5",
     "@types/sanitize-html": "2.13.0",
