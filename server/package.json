@@ -22,7 +22,7 @@
     "@fastify/multipart": "8.3.0",
     "@fastify/static": "7.0.4",
     "@fastify/swagger": "9.1.0",
-    "@nestjs/bull": "10.2.1",
+    "@nestjs/bull": "10.2.3",
     "@nestjs/cache-manager": "2.2.2",
     "@nestjs/common": "10.4.4",
     "@nestjs/config": "3.2.3",
