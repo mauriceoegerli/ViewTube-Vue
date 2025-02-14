@@ -36,7 +36,7 @@
     "archiver": "7.0.1",
     "axios": "1.7.7",
     "bcryptjs": "2.4.3",
-    "bull": "4.16.3",
+    "bull": "4.16.5",
     "cache-manager": "5.7.6",
     "cache-manager-redis-yet": "5.1.5",
     "class-transformer": "0.5.1",
